@@ -1,0 +1,14 @@
+services:
+  biletomat-a:
+    build: ./wersja-a
+    container_name: biletomat-wersja-a
+    ports:
+      - "8067:80"
+    restart: unless-stopped
+
+  biletomat-b:
+    build: ./wersja-b
+    container_name: biletomat-wersja-b
+    ports:
+      - "8068:80"
+    restart: unless-stopped

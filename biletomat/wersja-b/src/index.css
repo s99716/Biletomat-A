@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* widoczny fokus dla obsługi klawiaturą i czytników (WCAG 2.4.7) */
+button:focus-visible { outline: 4px solid #ff7a00; outline-offset: 3px; }
